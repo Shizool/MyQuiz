@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         rg2.clearCheck();
         EditText e = findViewById(R.id.q4anwser1);
         e.setTextColor(getResources().getColorStateList(R.color.white));
-        e.setText(" ");
+        e.setText("");
         RatingBar rb = findViewById(R.id.rating);
         rb.setRating(0);
         findViewById(R.id.checkId).setVisibility(View.VISIBLE);
