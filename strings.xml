@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My Quiz</string>
+    <string name="logo">Do you even lift ?!</string>
+    <string name="logo2">How good is your Broscience knowledge ?</string>
+    <string name="quest1">How many reps in a set you should do for the best hypertrophy ?</string>
+    <string name="quest2">Which macronutrients are essential in your diet (more than one) ?</string>
+    <string name="quest3">How much time does your muscle need to fully recover ?</string>
+    <string name="quest4">What type of movement is the best for muscle growth ?</string>
+    <string name="quest5">How good is your form ?</string>
+    <string name="exp1">This rep range scientifically give you the best GAINS !!!</string>
+    <string name="exp2">All macros are essential. Zinc is micronutrient.</string>
+    <string name="exp3">Overtraining is not your ally. Rest days are as important as GAINS days !</string>
+    <string name="exp4">Compound movements are proven to engage multiple muscles in our body resulting in the best GAINS !!!</string>
+    <string name="exp5">EVERY BRO KNOWS HE HAS A PERFECT FORM !!!</string>
+    <string name="box1">Protein</string>
+    <string name="box2">Carbohydrate</string>
+    <string name="box3">Fat</string>
+    <string name="box4">Zinc</string>
+</resources>

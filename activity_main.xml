@@ -14,9 +14,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:paddingBottom="12dp"
-            android:paddingLeft="24dp"
+            android:paddingLeft="@dimen/parent_spacing_left"
             android:paddingTop="24dp"
-            android:text="Do you even lift ?!"
+            android:text="@string/logo"
             android:textColor="@color/colorPrimary"
             android:textSize="40sp" />
 
@@ -24,33 +24,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="casual"
-            android:paddingLeft="24dp"
-            android:text="How good is your Broscience knowledge ?"
+            android:paddingLeft="@dimen/parent_spacing_left"
+            android:text="@string/logo2"
             android:textColor="@color/colorPrimary"
             android:textSize="24sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/card_margin"
             android:background="@color/cardBackground">
 
             <TextView
+                android:theme="@style/WhiteQuestion"
+                android:layout_margin="@dimen/text_card_margin"
                 android:id="@+id/question1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="How many reps in a set you should do for the best hypertrophy ?"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:text="@string/quest1" />
 
             <RadioGroup
                 android:id="@+id/radio_group1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question1"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/text_card_margin"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -91,17 +89,13 @@
             </RadioGroup>
 
             <TextView
+                android:theme="@style/OrangeExplanation"
                 android:id="@+id/explanation1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/radio_group1"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:paddingBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="This rep range scientifically give you the best GAINS !!!"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:layout_marginLeft="@dimen/text_card_margin"
+                android:text="@string/exp1"
                 android:visibility="invisible" />
 
         </RelativeLayout>
@@ -109,28 +103,26 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/card_margin"
             android:background="@color/cardBackground">
 
             <TextView
+                android:theme="@style/WhiteQuestion"
+                android:layout_margin="@dimen/text_card_margin"
                 android:id="@+id/question2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="Which macronutrients are essential in your diet (more than one) ?"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:text="@string/quest2" />
 
             <CheckBox
                 android:id="@+id/q2anwser1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question2"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_marginTop="8dp"
                 android:buttonTint="@color/white"
-                android:text="Protein"
+                android:text="@string/box1"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -139,9 +131,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/q2anwser1"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:buttonTint="@color/white"
-                android:text="Carbohydrate"
+                android:text="@string/box2"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -150,9 +142,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/q2anwser2"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:buttonTint="@color/white"
-                android:text="Fat"
+                android:text="@string/box3"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
@@ -162,24 +154,20 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/q2anwser3"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:buttonTint="@color/white"
-                android:text="Zinc"
+                android:text="@string/box4"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView
+                android:theme="@style/OrangeExplanation"
                 android:id="@+id/explanation2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_below="@id/q2anwser4"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:paddingBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="All macros are essential. Zinc is micronutrient."
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:text="@string/exp2"
                 android:visibility="invisible" />
 
         </RelativeLayout>
@@ -187,25 +175,23 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/card_margin"
             android:background="@color/cardBackground">
 
             <TextView
+                android:theme="@style/WhiteQuestion"
+                android:layout_margin="@dimen/text_card_margin"
                 android:id="@+id/question3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="How much time does your muscle need to fully recover ?"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:text="@string/quest3" />
 
             <RadioGroup
                 android:id="@+id/radio_group2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question3"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/text_card_margin"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -246,17 +232,13 @@
             </RadioGroup>
 
             <TextView
+                android:theme="@style/OrangeExplanation"
                 android:id="@+id/explanation3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_below="@id/radio_group2"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:paddingBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="Overtraining is not your ally. Rest days are as important as GAINS days !"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:text="@string/exp3"
                 android:visibility="invisible" />
 
         </RelativeLayout>
@@ -264,42 +246,36 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/card_margin"
             android:background="@color/cardBackground">
 
             <TextView
+                android:theme="@style/WhiteQuestion"
+                android:layout_margin="@dimen/text_card_margin"
                 android:id="@+id/question4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="What type of movement is the best for muscle growth ?"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:text="@string/quest4" />
 
             <EditText
                 android:id="@+id/q4anwser1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question4"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/text_card_margin"
                 android:inputType="textMultiLine"
                 android:textColor="@color/white"
                 android:theme="@style/MyEditTextStyle" />
 
             <TextView
+                android:theme="@style/OrangeExplanation"
                 android:id="@+id/explanation4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_below="@id/q4anwser1"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="Compound movements are proven to engage multiple muscles in our body resulting in the best GAINS !!!"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp"
+                android:text="@string/exp4"
                 android:visibility="invisible" />
 
         </RelativeLayout>
@@ -307,18 +283,16 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="@dimen/card_margin"
             android:background="@color/cardBackground">
 
             <TextView
+                android:theme="@style/WhiteQuestion"
+                android:layout_margin="@dimen/text_card_margin"
                 android:id="@+id/question5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="sans-serif-light"
-                android:text="How good is your form ?"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:text="@string/quest5" />
 
             <RatingBar
                 android:id="@+id/rating"
@@ -326,26 +300,20 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/question5"
                 android:layout_marginBottom="8dp"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_marginTop="16dp"
-                android:numStars="5"
-                android:scaleX="1.0"
-                android:scaleY="1.0"
-                android:stepSize="1"
                 android:theme="@style/RatingBar" />
 
             <TextView
+                android:theme="@style/OrangeExplanation"
                 android:id="@+id/explanation5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/rating"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginLeft="@dimen/text_card_margin"
                 android:layout_marginTop="8dp"
-                android:paddingBottom="8dp"
                 android:fontFamily="sans-serif-bold"
-                android:text="EVERY BRO KNOWS HE HAS A PERFECT FORM !!!"
-                android:textColor="@color/colorPrimary"
+                android:text="@string/exp5"
                 android:textSize="32sp"
                 android:visibility="invisible" />
 
@@ -359,7 +327,7 @@
                 android:id="@+id/checkId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="24dp"
+                android:layout_margin="@dimen/card_margin"
                 android:fontFamily="sans-serif"
                 android:onClick="checkAnwsers"
                 android:text="Check anwsers"
@@ -370,7 +338,7 @@
                 android:id="@+id/resetId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="24dp"
+                android:layout_margin="@dimen/card_margin"
                 android:fontFamily="sans-serif"
                 android:onClick="reset"
                 android:text="Reset"
